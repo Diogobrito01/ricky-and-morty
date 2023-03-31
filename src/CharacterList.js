@@ -80,7 +80,7 @@ const CharacterList = () => {
       <SearchInput
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        placeholder="Pesquisar personagem"
+        placeholder="Search characters"
       />
       <CharacterGrid>
         {sortCharacters().map(character => (
@@ -152,7 +152,7 @@ const CharacterList = () => {
         <NavigationButton onClick={handleNextPage} disabled={page === info.pages}>
           Next
         </NavigationButton>
-        <p>Foram encontrados {info.count} personagens</p>
+        <p>Found {info.count} characters</p>
       </PaginationBar>
     </Wrapper>
   );
